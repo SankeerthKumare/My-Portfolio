@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #030806;
+    color: #f1f5f9;
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #030806;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #10b981, #f59e0b);
+    border-radius: 10px;
+  }
+
+  ::selection {
+    background: #10b98150;
+    color: #ffffff;
+  }
+}
+
+@layer components {
+  .glass {
+    background: rgba(12, 31, 26, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(16, 185, 129, 0.08);
+  }
+
+  .glass-strong {
+    background: rgba(12, 31, 26, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(16, 185, 129, 0.12);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #10b981 0%, #fbbf24 50%, #fb7185 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-text-warm {
+    background: linear-gradient(135deg, #f59e0b 0%, #fb7185 50%, #f43f5e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-text-cool {
+    background: linear-gradient(135deg, #10b981 0%, #14b8a6 50%, #34d399 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glow-border {
+    position: relative;
+  }
+
+  .glow-border::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+      135deg,
+      #10b98150,
+      #f59e0b40,
+      #fb718540,
+      #14b8a650,
+      #10b98150
+    );
+    background-size: 400% 400%;
+    animation: borderFlow 5s linear infinite;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .hover-glow {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 35px rgba(16, 185, 129, 0.12),
+      0 0 70px rgba(16, 185, 129, 0.05),
+      inset 0 1px 0 rgba(16, 185, 129, 0.1);
+    border-color: rgba(16, 185, 129, 0.25);
+    transform: translateY(-2px);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 30px rgba(16, 185, 129, 0.6),
+      0 0 60px rgba(16, 185, 129, 0.3),
+      0 0 100px rgba(16, 185, 129, 0.1);
+  }
+
+  .text-glow-pulse {
+    animation: textGlowPulse 4.5s ease-in-out infinite;
+  }
+
+  .text-glow-amber {
+    text-shadow: 0 0 30px rgba(245, 158, 11, 0.5),
+      0 0 60px rgba(245, 158, 11, 0.2);
+  }
+
+  .animated-grid {
+    background-image: linear-gradient(
+        rgba(16, 185, 129, 0.04) 1px,
+        transparent 1px
+      ),
+      linear-gradient(90deg, rgba(16, 185, 129, 0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .spotlight {
+    background: radial-gradient(
+      600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      rgba(16, 185, 129, 0.06),
+      transparent 40%
+    );
+  }
+
+  .shimmer-text {
+    background: linear-gradient(
+      90deg,
+      #10b981 0%,
+      #fbbf24 25%,
+      #fb7185 50%,
+      #fbbf24 75%,
+      #10b981 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 3s linear infinite;
+  }
+
+  .marquee-track {
+    display: flex;
+    width: max-content;
+  }
+
+  .marquee-left {
+    animation: marqueeLeft 40s linear infinite;
+  }
+
+  .marquee-right {
+    animation: marqueeRight 45s linear infinite;
+  }
+
+  .marquee-left-slow {
+    animation: marqueeLeft 55s linear infinite;
+  }
+
+}
+
+@keyframes marqueeLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marqueeRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.6); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes textGlowPulse {
+  0%, 100% {
+    text-shadow: 0 0 30px rgba(16, 185, 129, 0.55),
+      0 0 60px rgba(16, 185, 129, 0.25),
+      0 0 100px rgba(16, 185, 129, 0.08);
+  }
+  50% {
+    text-shadow: 0 0 45px rgba(16, 185, 129, 0.85),
+      0 0 90px rgba(245, 158, 11, 0.35),
+      0 0 140px rgba(16, 185, 129, 0.2);
+  }
+}
+
+/* Performance: hint the compositor for the heaviest continuous animations */
+.marquee-track,
+.animate-morph-blob,
+.animate-morph-blob-2,
+.spin-cw,
+.spin-ccw,
+.hero-float-card {
+  will-change: transform;
+}
+
+/* CSS-only continuous animations (moved off framer-motion to stop driving React renders) */
+@keyframes spinCW { to { transform: rotate(360deg); } }
+@keyframes spinCCW { to { transform: rotate(-360deg); } }
+.spin-cw { animation: spinCW var(--dur, 30s) linear infinite; }
+.spin-ccw { animation: spinCCW var(--dur, 40s) linear infinite; }
+
+@keyframes heroCenterPulse {
+  0%, 100% { opacity: 0.15; transform: translate(-50%, -50%) scale(0.9); }
+  50% { opacity: 0.35; transform: translate(-50%, -50%) scale(1.1); }
+}
+.hero-center-pulse {
+  animation: heroCenterPulse 4s ease-in-out infinite;
+}
+
+@keyframes heroLightRay {
+  0%, 100% { opacity: 0; transform: scaleX(0.4); }
+  50% { opacity: var(--peak, 0.15); transform: scaleX(1); }
+}
+.hero-light-ray {
+  animation: heroLightRay var(--dur, 6s) ease-in-out infinite;
+}
+
+@keyframes heroFloatCard {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(6px, -12px); }
+  50% { transform: translate(-4px, 5px); }
+  75% { transform: translate(5px, -8px); }
+}
+.hero-float-card {
+  animation: heroFloatCard var(--dur, 9s) ease-in-out infinite;
+}
+
+@keyframes scrollDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(12px); }
+}
+.scroll-indicator-bounce { animation: scrollDown 2s ease-in-out infinite; }
+
+/* Accessibility: respect user's reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Performance: defer rendering of sections that aren't on screen */
+section:not(#home) {
+  content-visibility: auto;
+  contain-intrinsic-size: 800px;
+}
+
+/* Pause every CSS animation inside the hero once it scrolls out of view */
+section#home[data-out="true"] *,
+section#home[data-out="true"] {
+  animation-play-state: paused !important;
+}
+
