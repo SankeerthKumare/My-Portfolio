@@ -21,7 +21,7 @@ export interface Skill {
   name: string;
   icon: string;
   level: "Beginner" | "Intermediate" | "Advanced" | "Expert";
-  category: "Languages" | "Backend" | "Cloud & DevOps" | "Databases";
+  category: "Languages" | "Backend" | "Messaging & Events" | "AI / Agentic AI" | "Cloud & DevOps" | "Databases";
   years?: number;
   featured?: boolean;
   tagline?: string;

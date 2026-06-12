@@ -8,17 +8,17 @@ import Counter from "@/components/effects/Counter";
 import { fadeUp, scaleIn, viewport } from "@/lib/motion";
 
 const STATS = [
-  { value: 6, suffix: "+", label: "Years", gradient: "from-primary to-accent-teal" },
-  { value: 50, suffix: "K+", label: "Daily Txns", gradient: "from-accent-amber to-accent-coral" },
-  { value: 4, suffix: "", label: "Companies", gradient: "from-accent-coral to-accent-rose" },
-  { value: 2, suffix: "", label: "AWS Certs", gradient: "from-accent-teal to-primary" },
+  { value: 8, suffix: "+", label: "Years", gradient: "from-primary to-accent-teal" },
+  { value: 18, suffix: "M+", label: "Msgs/Day", gradient: "from-accent-amber to-accent-coral" },
+  { value: 5, suffix: "", label: "Companies", gradient: "from-accent-coral to-accent-rose" },
+  { value: 4, suffix: "", label: "Certs", gradient: "from-accent-teal to-primary" },
 ];
 
 const CERTS = [
-  "AWS Solutions Architect",
-  "AWS Developer Associate",
-  "HashiCorp Terraform",
-  "Oracle Java SE 11",
+  "AWS Solutions Architect – Associate",
+  "Oracle Java SE 11 Developer",
+  "HashiCorp Terraform Associate",
+  "Anthropic – Building with Claude API",
 ];
 
 export default function About() {
@@ -62,8 +62,8 @@ export default function About() {
               transition={{ delay: 0.2 }}
               className="text-slate-300 text-xl leading-relaxed font-light"
             >
-              Senior Java Backend Developer specializing in FinTech & Banking.
-              Building high-throughput payment systems at scale.
+              Senior Software Engineer with 8 years of experience in Java/J2EE, Spring Boot, Apache Kafka, and Agentic AI.
+              Building high-throughput payment systems and AI-driven backend services across financial, energy, telecom, and healthcare domains.
             </motion.p>
 
             <div className="grid grid-cols-2 gap-4">

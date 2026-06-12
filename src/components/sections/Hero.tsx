@@ -11,22 +11,23 @@ import StaggeredText from "@/components/effects/StaggeredText";
 
 const TYPEWRITER_TEXTS = [
   "Senior Software Engineer",
-  "Java Backend Expert",
-  "FinTech Specialist",
+  "Java/J2EE & Spring Boot Expert",
+  "Kafka & Event-Driven Systems",
+  "Agentic AI & RAG Pipelines",
   "AWS Certified Architect",
 ];
 
 const CONTEXT_CHIPS = [
-  { label: "6 years", color: "text-primary-light border-primary/20" },
+  { label: "8 years", color: "text-primary-light border-primary/20" },
   { label: "FinTech & Banking", color: "text-accent-amber border-accent-amber/20" },
-  { label: "Event-Driven Systems", color: "text-accent-coral border-accent-coral/20" },
+  { label: "Agentic AI", color: "text-accent-coral border-accent-coral/20" },
   { label: "Cloud-Native", color: "text-accent-teal border-accent-teal/20" },
 ];
 
 const SOCIALS = [
-  { Icon: FiLinkedin, href: "https://www.linkedin.com/in/sankeerth-kumar-a84a89288/", hover: "hover:text-primary hover:shadow-glow hover:border-primary/30" },
-  { Icon: FiGithub, href: "https://github.com/Sankeerthkumar", hover: "hover:text-accent-amber hover:shadow-glow-amber hover:border-accent-amber/30" },
-  { Icon: FiMail, href: "mailto:sankeertheswaravaka98@gmail.com", hover: "hover:text-accent-coral hover:shadow-glow-coral hover:border-accent-coral/30" },
+  { Icon: FiLinkedin, href: "https://www.linkedin.com/in/eswaravaka-s-a84a89288", hover: "hover:text-primary hover:shadow-glow hover:border-primary/30" },
+  { Icon: FiGithub, href: "https://github.com/Eswaravaka", hover: "hover:text-accent-amber hover:shadow-glow-amber hover:border-accent-amber/30" },
+  { Icon: FiMail, href: "mailto:eswaravaka.1998@gmail.com", hover: "hover:text-accent-coral hover:shadow-glow-coral hover:border-accent-coral/30" },
 ];
 
 export default function Hero() {
@@ -96,10 +97,10 @@ export default function Hero() {
 
         <h1 className="font-black tracking-tighter leading-[0.85] mb-6">
           <span className="block text-6xl sm:text-8xl lg:text-[10rem]">
-            <StaggeredText text="Sankeerth" className="text-white text-glow text-glow-pulse" delay={1.3} />
+            <StaggeredText text="Eswaravaka" className="text-white text-glow text-glow-pulse" delay={1.3} />
           </span>
-          <span className="block text-4xl sm:text-6xl lg:text-8xl mt-3">
-            <StaggeredText text="Kumar Eswaravaka" className="shimmer-text" delay={1.9} />
+          <span className="block text-3xl sm:text-4xl lg:text-5xl mt-3">
+            <StaggeredText text="Senior Software Engineer" className="shimmer-text" delay={1.9} />
           </span>
         </h1>
 

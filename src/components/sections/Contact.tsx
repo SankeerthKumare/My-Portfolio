@@ -7,10 +7,10 @@ import TextScramble from "@/components/effects/TextScramble";
 import { viewport } from "@/lib/motion";
 
 const SOCIALS = [
-  { Icon: FiMail, href: "mailto:sankeertheswaravaka98@gmail.com", label: "Email", hover: "hover:text-primary hover:shadow-glow hover:border-primary/30" },
-  { Icon: FiPhone, href: "tel:+16696097472", label: "Phone", hover: "hover:text-accent-amber hover:shadow-glow-amber hover:border-accent-amber/30" },
-  { Icon: FiLinkedin, href: "https://www.linkedin.com/in/sankeerth-kumar-a84a89288/", label: "LinkedIn", hover: "hover:text-accent-teal hover:shadow-glow hover:border-accent-teal/30" },
-  { Icon: FiGithub, href: "https://github.com/Sankeerthkumar", label: "GitHub", hover: "hover:text-white hover:border-white/10" },
+  { Icon: FiMail, href: "mailto:eswaravaka.1998@gmail.com", label: "Email", hover: "hover:text-primary hover:shadow-glow hover:border-primary/30" },
+  { Icon: FiPhone, href: "tel:+18179529144", label: "Phone", hover: "hover:text-accent-amber hover:shadow-glow-amber hover:border-accent-amber/30" },
+  { Icon: FiLinkedin, href: "https://www.linkedin.com/in/eswaravaka-s-a84a89288", label: "LinkedIn", hover: "hover:text-accent-teal hover:shadow-glow hover:border-accent-teal/30" },
+  { Icon: FiGithub, href: "https://github.com/Eswaravaka", label: "GitHub", hover: "hover:text-white hover:border-white/10" },
 ];
 
 export default function Contact() {

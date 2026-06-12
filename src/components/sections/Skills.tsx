@@ -6,9 +6,10 @@ import {
   SiOpenjdk, SiPython, SiTypescript, SiJavascript, SiSpring,
   SiDocker, SiKubernetes, SiPostgresql, SiMongodb, SiRedis,
   SiMysql, SiGit, SiGithub, SiTerraform, SiJenkins,
-  SiSpringsecurity, SiJunit5, SiApachemaven,
+  SiSpringsecurity, SiJunit5, SiApachemaven, SiPrometheus,
+  SiGrafana, SiGithubactions,
 } from "react-icons/si";
-import { FiCode, FiCloud, FiDatabase, FiLayers, FiZap, FiCheckCircle, FiGitMerge, FiGrid, FiTrendingUp } from "react-icons/fi";
+import { FiCode, FiCloud, FiDatabase, FiLayers, FiZap, FiCheckCircle, FiGitMerge, FiGrid, FiTrendingUp, FiCpu, FiLock, FiBarChart2, FiSearch } from "react-icons/fi";
 import type { IconType } from "react-icons";
 import { skills } from "@/data/skills";
 import TextScramble from "@/components/effects/TextScramble";
@@ -18,8 +19,9 @@ const iconMap: Record<string, IconType> = {
   SiOpenjdk, SiPython, SiTypescript, SiJavascript, SiSpring,
   SiDocker, SiKubernetes, SiPostgresql, SiMongodb, SiRedis,
   SiMysql, SiGit, SiGithub, SiTerraform, SiJenkins,
-  SiSpringsecurity, SiJunit5, SiApachemaven,
-  FiCode, FiCloud, FiDatabase, FiLayers, FiZap, FiCheckCircle, FiGitMerge, FiGrid,
+  SiSpringsecurity, SiJunit5, SiApachemaven, SiPrometheus,
+  SiGrafana, SiGithubactions,
+  FiCode, FiCloud, FiDatabase, FiLayers, FiZap, FiCheckCircle, FiGitMerge, FiGrid, FiCpu, FiLock, FiBarChart2, FiSearch,
 };
 
 const levelGlow: Record<string, { border: string; bg: string; text: string; shadow: string }> = {
@@ -32,8 +34,10 @@ const levelGlow: Record<string, { border: string; bg: string; text: string; shad
 const categoryMeta: Record<string, { color: string; icon: IconType; gradient: string }> = {
   Languages: { color: "text-primary-light", icon: FiCode, gradient: "from-primary to-accent-teal" },
   Backend: { color: "text-accent-amber", icon: FiLayers, gradient: "from-accent-amber to-accent-coral" },
-  "Cloud & DevOps": { color: "text-accent-coral", icon: FiCloud, gradient: "from-accent-coral to-accent-rose" },
-  Databases: { color: "text-accent-teal", icon: FiDatabase, gradient: "from-accent-teal to-primary" },
+  "Messaging & Events": { color: "text-accent-teal", icon: FiZap, gradient: "from-accent-teal to-primary" },
+  "AI / Agentic AI": { color: "text-accent-coral", icon: FiCpu, gradient: "from-accent-coral to-accent-rose" },
+  "Cloud & DevOps": { color: "text-accent-rose", icon: FiCloud, gradient: "from-accent-rose to-primary" },
+  Databases: { color: "text-primary-light", icon: FiDatabase, gradient: "from-primary to-accent-teal" },
 };
 
 function SkillCard({ skill }: { skill: typeof skills[0] }) {
@@ -78,7 +82,7 @@ function MarqueeRow({ items, direction, speed }: { items: typeof skills; directi
 
 function CoreStackCard({ skill, index }: { skill: typeof skills[0]; index: number }) {
   const Icon = iconMap[skill.icon] ?? FiCode;
-  const meta = categoryMeta[skill.category];
+  const meta = categoryMeta[skill.category] ?? categoryMeta["Backend"];
 
   return (
     <motion.div
@@ -124,7 +128,7 @@ export default function Skills() {
   const featured = skills.filter(s => s.featured);
 
   const row1 = skills.filter(s => s.category === "Languages" || s.category === "Backend");
-  const row2 = skills.filter(s => s.category === "Cloud & DevOps");
+  const row2 = skills.filter(s => s.category === "Messaging & Events" || s.category === "AI / Agentic AI" || s.category === "Cloud & DevOps");
   const row3 = skills.filter(s => s.category === "Databases").concat(skills.filter(s => s.category === "Backend").slice(0, 4));
 
   const categoryCounts = (Object.keys(categoryMeta) as (keyof typeof categoryMeta)[]).map(c => ({
@@ -151,7 +155,7 @@ export default function Skills() {
             <TextScramble text="Stack" className="gradient-text-warm" />
           </h2>
           <p className="mt-4 text-slate-500 text-sm sm:text-base font-light max-w-xl mx-auto">
-            6 years building production Java backends — from monolith refactors to event-driven payment systems.
+            8 years building production Java backends — from monolith refactors to event-driven systems and agentic AI pipelines.
           </p>
         </motion.div>
 
@@ -162,7 +166,7 @@ export default function Skills() {
           transition={{ delay: 0.2 }}
           className="max-w-5xl mx-auto px-4 mb-12"
         >
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
             {categoryCounts.map((c, i) => {
               const Icon = c.meta.icon;
               return (

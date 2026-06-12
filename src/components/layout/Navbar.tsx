@@ -58,7 +58,7 @@ export default function Navbar() {
             className="relative group"
           >
             <span className="text-xl font-bold gradient-text font-mono tracking-tight">
-              {"<SK />"}
+              {"<EV />"}
             </span>
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary via-accent-amber to-accent-coral group-hover:w-full transition-all duration-500" />
           </button>

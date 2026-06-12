@@ -5,9 +5,8 @@ import { FiMapPin } from "react-icons/fi";
 import { viewport } from "@/lib/motion";
 
 const places = [
-  { name: "Hyderabad", role: "Origin · India", x: 75, y: 36, color: "primary" },
-  { name: "Houston", role: "MD Anderson · TX", x: 48, y: 36, color: "amber" },
-  { name: "Irving", role: "Current · TX", x: 20, y: 36, color: "coral" },
+  { name: "India", role: "Origin · 2017-2023", x: 25, y: 36, color: "primary" },
+  { name: "United States", role: "Current · TX", x: 75, y: 34, color: "coral" },
 ];
 
 const colorMap: Record<string, { dot: string; ring: string; text: string; rgb: string }> = {
@@ -35,20 +34,18 @@ export default function LocationsMap() {
             </pattern>
             <linearGradient id="path-gradient" x1="0" x2="1" y1="0" y2="0">
               <stop offset="0%" stopColor="#10b981" stopOpacity="0.7" />
-              <stop offset="50%" stopColor="#f59e0b" stopOpacity="0.7" />
               <stop offset="100%" stopColor="#fb7185" stopOpacity="0.7" />
             </linearGradient>
           </defs>
           <rect width="100" height="60" fill="url(#grid)" />
 
           {/* Stylized continents */}
-          <ellipse cx="20" cy="34" rx="14" ry="11" fill="rgba(16,185,129,0.045)" />
-          <ellipse cx="50" cy="36" rx="8" ry="13" fill="rgba(16,185,129,0.045)" />
-          <ellipse cx="75" cy="38" rx="14" ry="10" fill="rgba(16,185,129,0.045)" />
+          <ellipse cx="25" cy="36" rx="12" ry="10" fill="rgba(16,185,129,0.045)" />
+          <ellipse cx="75" cy="34" rx="15" ry="12" fill="rgba(16,185,129,0.045)" />
 
-          {/* Connecting path */}
+          {/* Connecting path - India to United States */}
           <motion.path
-            d={`M ${places[0].x} ${places[0].y} Q 62 24 ${places[1].x} ${places[1].y} Q 34 24 ${places[2].x} ${places[2].y}`}
+            d={`M ${places[0].x} ${places[0].y} Q 50 15 ${places[1].x} ${places[1].y}`}
             fill="none"
             stroke="url(#path-gradient)"
             strokeWidth="0.45"
@@ -88,7 +85,7 @@ export default function LocationsMap() {
           })}
         </svg>
 
-        <div className="mt-5 grid grid-cols-3 gap-2 text-xs">
+        <div className="mt-5 grid grid-cols-2 gap-4 text-xs">
           {places.map((p, i) => {
             const c = colorMap[p.color];
             return (

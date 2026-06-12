@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { FiGithub, FiLinkedin, FiMail, FiHeart } from "react-icons/fi";
 
 const socialLinks = [
-  { icon: FiGithub, href: "https://github.com/Sankeerthkumar", label: "GitHub", hoverColor: "hover:text-primary hover:shadow-glow hover:border-primary/30" },
-  { icon: FiLinkedin, href: "https://www.linkedin.com/in/sankeerth-kumar-a84a89288/", label: "LinkedIn", hoverColor: "hover:text-accent-amber hover:shadow-glow-amber hover:border-accent-amber/30" },
-  { icon: FiMail, href: "mailto:sankeertheswaravaka98@gmail.com", label: "Email", hoverColor: "hover:text-accent-coral hover:shadow-glow-coral hover:border-accent-coral/30" },
+  { icon: FiGithub, href: "https://github.com/Eswaravaka", label: "GitHub", hoverColor: "hover:text-primary hover:shadow-glow hover:border-primary/30" },
+  { icon: FiLinkedin, href: "https://www.linkedin.com/in/eswaravaka-s-a84a89288", label: "LinkedIn", hoverColor: "hover:text-accent-amber hover:shadow-glow-amber hover:border-accent-amber/30" },
+  { icon: FiMail, href: "mailto:eswaravaka.1998@gmail.com", label: "Email", hoverColor: "hover:text-accent-coral hover:shadow-glow-coral hover:border-accent-coral/30" },
 ];
 
 export default function Footer() {
@@ -22,7 +22,7 @@ export default function Footer() {
             whileHover={{ scale: 1.05 }}
             className="text-2xl font-bold gradient-text font-mono cursor-default"
           >
-            {"<SK />"}
+            {"<EV />"}
           </motion.span>
 
           {/* Social links */}

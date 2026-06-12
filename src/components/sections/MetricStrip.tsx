@@ -5,11 +5,11 @@ import Counter from "@/components/effects/Counter";
 import { fadeUp, viewport } from "@/lib/motion";
 
 const METRICS = [
-  { value: 50, suffix: "K+", label: "Daily Txns", color: "from-primary to-accent-teal" },
-  { value: 35, suffix: "%", label: "Latency Cut", color: "from-accent-teal to-accent-amber" },
-  { value: 6, suffix: "", label: "Years Backend", color: "from-accent-amber to-accent-coral" },
-  { value: 28, suffix: "", label: "Technologies", color: "from-accent-coral to-accent-rose" },
-  { value: 2, suffix: "", label: "AWS Certs", color: "from-accent-rose to-primary" },
+  { value: 18, suffix: "M+", label: "Msgs/Day", color: "from-primary to-accent-teal" },
+  { value: 140, suffix: "M+", label: "Daily Txns", color: "from-accent-teal to-accent-amber" },
+  { value: 8, suffix: "", label: "Years Backend", color: "from-accent-amber to-accent-coral" },
+  { value: 40, suffix: "+", label: "Technologies", color: "from-accent-coral to-accent-rose" },
+  { value: 4, suffix: "", label: "Certifications", color: "from-accent-rose to-primary" },
 ];
 
 export default function MetricStrip() {

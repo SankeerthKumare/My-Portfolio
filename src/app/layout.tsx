@@ -3,33 +3,35 @@ import "./globals.css";
 import MotionProvider from "@/components/MotionProvider";
 
 export const metadata: Metadata = {
-  title: "Sankeerth Kumar Eswaravaka | Senior Java Backend Developer",
+  title: "Eswaravaka | Senior Software Engineer | Java/J2EE | Spring Boot | Kafka | Agentic AI | AWS",
   description:
-    "Senior Java Backend Developer with 6 years in FinTech & Banking. Expert in Java 17, Spring Boot, Apache Kafka, and AWS. AWS Certified Solutions Architect & Developer.",
+    "Senior Software Engineer with 8 years in Java/J2EE, Spring Boot, Apache Kafka, Agentic AI, and AWS. Specializing in FinTech, Energy, Telecom, and Healthcare domains.",
   keywords: [
-    "Java Backend Developer",
     "Senior Software Engineer",
+    "Java",
+    "J2EE",
     "Spring Boot",
     "Apache Kafka",
+    "Agentic AI",
+    "LangChain",
     "AWS",
-    "FinTech",
-    "Banking",
     "Microservices",
+    "RAG Pipelines",
     "Portfolio",
   ],
-  authors: [{ name: "Sankeerth Kumar Eswaravaka" }],
+  authors: [{ name: "Eswaravaka" }],
   openGraph: {
-    title: "Sankeerth Kumar Eswaravaka | Senior Java Backend Developer",
+    title: "Eswaravaka | Senior Software Engineer",
     description:
-      "Senior Java Backend Developer specializing in FinTech & Banking systems.",
+      "Senior Software Engineer specializing in Java/J2EE, Spring Boot, Kafka, Agentic AI & AWS.",
     url: "https://sankeerth.vercel.app",
-    siteName: "Sankeerth Kumar Portfolio",
+    siteName: "Eswaravaka Portfolio",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sankeerth Kumar Eswaravaka | Senior Java Backend Developer",
-    description: "Senior Java Backend Developer specializing in FinTech & Banking.",
+    title: "Eswaravaka | Senior Software Engineer",
+    description: "Senior Software Engineer specializing in Java/J2EE, Spring Boot, Kafka, Agentic AI & AWS.",
     creator: "@sankeerth_dev",
   },
 };
