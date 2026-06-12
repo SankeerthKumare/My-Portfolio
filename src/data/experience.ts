@@ -21,7 +21,7 @@ export const experiences: Experience[] = [
   {
     id: 2,
     company: "Chevron (Remote)",
-    role: "Software Engineer",
+    role: "Senior Software Engineer",
     duration: "Aug 2024 – May 2025",
     location: "Remote",
     description: [
@@ -37,7 +37,7 @@ export const experiences: Experience[] = [
   {
     id: 3,
     company: "Nous Info Systems (Remote)",
-    role: "Software Engineer",
+    role: "Senior Java Software Engineer",
     duration: "May 2022 – July 2023",
     location: "Remote",
     description: [
@@ -67,7 +67,7 @@ export const experiences: Experience[] = [
   {
     id: 5,
     company: "Ford, Chennai",
-    role: "Junior Software Engineer",
+    role: "Junior Java Developer",
     duration: "Jun 2017 – Dec 2019",
     location: "Chennai, India",
     description: [
