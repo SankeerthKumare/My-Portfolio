@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { FiGithub, FiLinkedin, FiMail, FiHeart } from "react-icons/fi";
 
 const socialLinks = [
-  { icon: FiGithub, href: "https://github.com/Eswaravaka", label: "GitHub", hoverColor: "hover:text-primary hover:shadow-glow hover:border-primary/30" },
-  { icon: FiLinkedin, href: "https://www.linkedin.com/in/eswaravaka-s-a84a89288", label: "LinkedIn", hoverColor: "hover:text-accent-amber hover:shadow-glow-amber hover:border-accent-amber/30" },
-  { icon: FiMail, href: "mailto:eswaravaka32@gmail.com", label: "Email", hoverColor: "hover:text-accent-coral hover:shadow-glow-coral hover:border-accent-coral/30" },
+  { icon: FiGithub, href: "https://github.com/SankeerthKumare", label: "GitHub", hoverColor: "hover:text-primary hover:shadow-glow hover:border-primary/30" },
+  { icon: FiLinkedin, href: "https://www.linkedin.com/in/sankeerth-kumar-e-a48a9531a/", label: "LinkedIn", hoverColor: "hover:text-accent-amber hover:shadow-glow-amber hover:border-accent-amber/30" },
+  { icon: FiMail, href: "mailto:sankeertheswaravaka@gmail.com", label: "Email", hoverColor: "hover:text-accent-coral hover:shadow-glow-coral hover:border-accent-coral/30" },
 ];
 
 export default function Footer() {
