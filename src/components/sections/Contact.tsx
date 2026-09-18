@@ -7,10 +7,10 @@ import TextScramble from "@/components/effects/TextScramble";
 import { viewport } from "@/lib/motion";
 
 const SOCIALS = [
-  { Icon: FiMail, href: "mailto:eswaravaka32@gmail.com", label: "Email", hover: "hover:text-primary hover:shadow-glow hover:border-primary/30" },
+  { Icon: FiMail, href: "mailto:sankeertheswaravaka@gmail.com", label: "Email", hover: "hover:text-primary hover:shadow-glow hover:border-primary/30" },
   { Icon: FiPhone, href: "tel:+16823763177", label: "Phone", hover: "hover:text-accent-amber hover:shadow-glow-amber hover:border-accent-amber/30" },
-  { Icon: FiLinkedin, href: "https://www.linkedin.com/in/eswaravaka-s-a84a89288", label: "LinkedIn", hover: "hover:text-accent-teal hover:shadow-glow hover:border-accent-teal/30" },
-  { Icon: FiGithub, href: "https://github.com/Eswaravaka", label: "GitHub", hover: "hover:text-white hover:border-white/10" },
+  { Icon: FiLinkedin, href: "https://www.linkedin.com/in/sankeerth-kumar-e-a48a9531a/", label: "LinkedIn", hover: "hover:text-accent-teal hover:shadow-glow hover:border-accent-teal/30" },
+  { Icon: FiGithub, href: "https://github.com/SankeerthKumare", label: "GitHub", hover: "hover:text-white hover:border-white/10" },
 ];
 
 export default function Contact() {
