@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Eswaravaka | Senior Software Engineer",
+    title: "Sankeerth Kumar Eswaravaka | Senior Software Engineer",
     description: "Senior Software Engineer specializing in Java/J2EE, Spring Boot, Kafka, Agentic AI & AWS.",
     creator: "@sankeerth_dev",
   },
