@@ -3,7 +3,7 @@ import "./globals.css";
 import MotionProvider from "@/components/MotionProvider";
 
 export const metadata: Metadata = {
-  title: "Sankeerth Kumar Eswaravaka | Senior Software Engineer | Java/J2EE | Spring Boot | Kafka | Agentic AI | AWS",
+  title: "Sankeerth Kumar | Senior Software Engineer | Java/J2EE | Spring Boot | Kafka | Agentic AI | AWS",
   description:
     "Senior Software Engineer with 6 years in Java/J2EE, Spring Boot, Apache Kafka, Agentic AI, and AWS. Specializing in FinTech, Energy, Telecom, and Healthcare domains.",
   keywords: [
@@ -19,18 +19,18 @@ export const metadata: Metadata = {
     "RAG Pipelines",
     "Portfolio",
   ],
-  authors: [{ name: "Sankeerth Kumar Eswaravaka" }],
+  authors: [{ name: "Sankeerth Kumar" }],
   openGraph: {
-    title: "Sankeerth Kumar Eswaravaka | Senior Software Engineer",
+    title: "Sankeerth Kumar | Senior Software Engineer",
     description:
       "Senior Software Engineer specializing in Java/J2EE, Spring Boot, Kafka, Agentic AI & AWS.",
     url: "https://sankeerth.vercel.app",
-    siteName: "Sankeerth Kumar Eswaravaka Portfolio",
+    siteName: "Sankeerth Kumar Portfolio",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sankeerth Kumar Eswaravaka | Senior Software Engineer",
+    title: "Sankeerth Kumar | Senior Software Engineer",
     description: "Senior Software Engineer specializing in Java/J2EE, Spring Boot, Kafka, Agentic AI & AWS.",
     creator: "@sankeerth_dev",
   },

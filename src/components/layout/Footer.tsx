@@ -22,7 +22,7 @@ export default function Footer() {
             whileHover={{ scale: 1.05 }}
             className="text-2xl font-bold gradient-text font-mono cursor-default"
           >
-            {"<EV />"}
+            {"<SK />"}
           </motion.span>
 
           {/* Social links */}
@@ -53,7 +53,7 @@ export default function Footer() {
                 <FiHeart size={12} className="text-accent-coral fill-accent-coral" />
               </motion.span>{" "}
               by{" "}
-              <span className="gradient-text font-semibold">Sankeerth Kumar Eswaravaka</span>
+              <span className="gradient-text font-semibold">Sankeerth Kumar</span>
             </p>
             <p className="text-slate-600 text-xs font-mono">
               &copy; {new Date().getFullYear()} &middot; All rights reserved

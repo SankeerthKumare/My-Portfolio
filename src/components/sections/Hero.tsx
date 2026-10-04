@@ -97,7 +97,7 @@ export default function Hero() {
 
         <h1 className="font-black tracking-tighter leading-[0.85] mb-6">
           <span className="block text-6xl sm:text-8xl lg:text-[10rem]">
-            <StaggeredText text="Eswaravaka" className="text-white text-glow text-glow-pulse" delay={1.3} />
+            <StaggeredText text="Sankeerth Kumar" className="text-white text-glow text-glow-pulse" delay={1.3} />
           </span>
           <span className="block text-3xl sm:text-4xl lg:text-5xl mt-3">
             <StaggeredText text="Senior Software Engineer" className="shimmer-text" delay={1.9} />
