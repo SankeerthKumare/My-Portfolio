@@ -5,7 +5,7 @@ import MotionProvider from "@/components/MotionProvider";
 export const metadata: Metadata = {
   title: "Sankeerth Kumar | Senior Software Engineer | Java/J2EE | Spring Boot | Kafka | Agentic AI | AWS",
   description:
-    "Senior Software Engineer with 6 years in Java/J2EE, Spring Boot, Apache Kafka, Agentic AI, and AWS. Specializing in FinTech, Energy, Telecom, and Healthcare domains.",
+    "Senior Software Engineer with 6+ years in Java/J2EE, Spring Boot, Apache Kafka, Agentic AI, and AWS. Specializing in FinTech, Energy, Telecom, and Healthcare domains.",
   keywords: [
     "Senior Software Engineer",
     "Java",

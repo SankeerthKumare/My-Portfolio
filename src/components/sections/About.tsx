@@ -8,7 +8,7 @@ import Counter from "@/components/effects/Counter";
 import { fadeUp, scaleIn, viewport } from "@/lib/motion";
 
 const STATS = [
-  { value: 8, suffix: "+", label: "Years", gradient: "from-primary to-accent-teal" },
+  { value: 6, suffix: "+", label: "Years", gradient: "from-primary to-accent-teal" },
   { value: 18, suffix: "M+", label: "Msgs/Day", gradient: "from-accent-amber to-accent-coral" },
   { value: 5, suffix: "", label: "Companies", gradient: "from-accent-coral to-accent-rose" },
   { value: 4, suffix: "", label: "Certs", gradient: "from-accent-teal to-primary" },
@@ -62,7 +62,7 @@ export default function About() {
               transition={{ delay: 0.2 }}
               className="text-slate-300 text-xl leading-relaxed font-light"
             >
-              Senior Software Engineer with 8 years of experience in Java/J2EE, Spring Boot, Apache Kafka, and Agentic AI.
+              Senior Software Engineer with 6+ years of experience in Java/J2EE, Spring Boot, Apache Kafka, and Agentic AI.
               Building high-throughput payment systems and AI-driven backend services across financial, energy, telecom, and healthcare domains.
             </motion.p>
 

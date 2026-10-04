@@ -155,7 +155,7 @@ export default function Skills() {
             <TextScramble text="Stack" className="gradient-text-warm" />
           </h2>
           <p className="mt-4 text-slate-500 text-sm sm:text-base font-light max-w-xl mx-auto">
-            8 years building production Java backends — from monolith refactors to event-driven systems and agentic AI pipelines.
+            6+ years building production Java backends — from monolith refactors to event-driven systems and agentic AI pipelines.
           </p>
         </motion.div>
 

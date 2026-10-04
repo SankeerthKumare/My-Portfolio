@@ -18,7 +18,7 @@ const TYPEWRITER_TEXTS = [
 ];
 
 const CONTEXT_CHIPS = [
-  { label: "8 years", color: "text-primary-light border-primary/20" },
+  { label: "6+ years", color: "text-primary-light border-primary/20" },
   { label: "FinTech & Banking", color: "text-accent-amber border-accent-amber/20" },
   { label: "Agentic AI", color: "text-accent-coral border-accent-coral/20" },
   { label: "Cloud-Native", color: "text-accent-teal border-accent-teal/20" },
